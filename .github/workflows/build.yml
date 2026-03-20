@@ -16,7 +16,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew assembleDebug
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v7
       with:
         name: my-calendar-apk
         path: app/build/outputs/apk/debug/*.apk
